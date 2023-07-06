@@ -44,6 +44,9 @@ button {
     display: inline-block;
 }
 
+/* Responsive
+================================================== */
+
 @media only screen and (max-width: 800px) {
     h1 {
         font-size: 1.4em;
@@ -99,12 +102,14 @@ button {
     #container1 {
         padding: 20px !important;
     }
-    #benefit h4, #boxTitle {
-        font-size: 0.75em;
-    }
 
     #identity h4 {
+        margin-top: 0 !important;
         margin-bottom: 0 !important;
+    }
+
+    #boxTitle {
+        font-size: 0.75em;
     }
 
     #boxSubTitle {
@@ -123,6 +128,15 @@ button {
     .btn-slideshow button {
         font-size: 0.6em;
         padding: 5px 10px;
+    }
+
+    #testimonial {
+        margin: 15px 20px 5px !important;
+    }
+
+    #benefit h4 {
+        font-size: 0.75em !important;
+        margin-top: 20px !important;
     }
 
     #benefit ol {
@@ -165,6 +179,16 @@ button {
         font-size: 0.6em !important;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    #identity h4 {
+        font-size: 0.85em !important;
+    }
+
+    .wrapper-identity span img {
+        width: 35px !important;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -274,6 +298,7 @@ button {
 #testimonial p {
     display: flex;
     align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -300,6 +325,11 @@ button {
 
 #identity h4 {
     margin-top: 20px;
+    text-align: left !important;
+}
+
+#identity em {
+    text-align: left !important;
 }
 
 #benefit {
