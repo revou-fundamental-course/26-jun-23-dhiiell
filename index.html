@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eGroceries</title>
+    <link rel="icon" href="assets/img/logo-icon.png" type="image/ico" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section id="navbar">
+            <nav class="wrapper-header">
+                <div class="logo">
+                    <a href=""><img src="assets/img/logo-main.png" width="85" alt=""></a>
+                </div>
+                <ul class="navigation">
+                    <li><a href="#navbar">Home</a></li>
+                    <li><a href="#ourPackage">Our Packages</a></li>
+                    <li><a href="#callUs">Call Us</a></li>
+                </ul>
+            </nav>
+        </section>
+        <hr>
+        <section class="headTitle1">
+            <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+            <p>Every Day with Best Ingredients</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="callUs">
+            <article id="article">
+                <img
+                    class="img-slideshow"
+                    src="assets/img/grocery-1-unsplash.jpg" alt="vegetable" />
+                <img
+                    class="img-slideshow"
+                    src="assets/img/grocery-2-unsplash.jpg" alt="fruit" />
+                <img
+                    class="img-slideshow"
+                    src="assets/img/grocery-3-unsplash.jpg" alt="kitchen set" />
+                <img
+                    class="img-slideshow"
+                    src="assets/img/grocery-4-unsplash.jpg" alt="kitchen ingredient" />
+                <div class="btn-slideshow">
+                    <button onclick="plusDivs(-1)"><</button>
+                    <button onclick="plusDivs(1)">></button>
+                </div>
+                <div id="testimonial">
+                    <p>"Setiap hari beli burger yang enak disini"</p>
+                    <div class="wrapper-identity">
+                        <span><img src="assets/img/user-testimoni.png" alt="user-ico"></span>
+                        <div id="identity">
+                            <h4>Florence Hughes</h4>
+                            <p><em>Ibu Rumah Tangga, 28</em></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="benefit">
+                    <h4>You may feel curious. What are the benefits that you can get when shopping here? How is it different from other places?</h4>
+                    <ol type="1">
+                        <li>Produk Segar dan Bermutu. Kami hanya menyediakan produk-produk berkualitas tinggi, dengan mutu terjamin.</li>
+                        <li>Tidak perlu takut pengiriman lama, pesanan anda akan segera diantar menuju rumah anda hanya dalam 2 jam! setelah anda melakukan pemesanan.</li>
+                        <li>Cek promo harian kami untuk mendapatkan harga paling murah setiap harinya!</li>
+                    </ol>
+                </div>
+            </article>
+
+            <div id="form">
+                <div id="container1">
+                    <h3 id="boxTitle">Contact Us</h3>
+                    <p id="boxSubTitle">Sales akan menghubungi anda secepatnya setelah data Anda telah kami terima.</p>
+
+                    <form id="boxForm" name="contact-form" onsubmit="return validateForm()">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name"><br>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com"><br>
+
+                        <label for="item">What are you Interested in?</label>
+                        <select id="item" name="item">
+                            <option value="" disabled selected>Select Item</option>
+                            <option value="vegetable">Vegetable</option>
+                            <option value="fruit">Fruit</option>
+                            <option value="kitchen set">Kitchen Set</option>
+                        </select><br>
+
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourPackage">
+            <div id="headTitle2">
+                <h1>Our Package</h1>
+            </div>
+
+            <div class="content">
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/cabbage.svg"  alt="icon" class="ico">
+                    </div>
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/apple.svg" alt="icon" class="ico">
+                    </div>
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari local atau import dengan harga yang menarik</p>
+                </div>
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/delivery.svg"  alt="icon" class="ico">
+                    </div>
+                    <h3>Instant delivery</h3>
+                    <p>Dikirim instan oleh kurir yang telah ditraining dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>                
+            </div>
+            <hr>
+            <div class="content">
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/ingredient.svg" alt="icon" class="ico">
+                    </div>
+                    <h3>Kitchen Ingredient</h3>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/kitchen-pack.svg" alt="icon" class="ico">
+                    </div>
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                </div>
+                <div class="package">
+                    <div id="icon">
+                        <img src="assets/img/svg/bundling-set.svg" alt="icon" class="ico">
+                    </div>
+                    <h3>Bundling Set</h3>
+                    <p>Bingung masak apa? Sudah tersedia paket untuk kamu masak di dapurmu</p>
+                </div>                
+            </div>
+        </section>
+            <hr>
+        <section id="callAction">
+            <div id="container3">
+                <h1 id="headTitle3">Promo and Discount</h1>
+                <p id="subTitle3">Akhir bulan, dompet menipis? Dapatkan promo ataupun diskon menarik di eGroceries. Nikmati baragam keuntungan berbelanja via daring disini!</p>
+                <input type="submit" value="READ MORE">
+            </div>
+        </section>
+            <hr>
+        <section class="footer">
+            <a href=""><img src="assets/img/logo-alt.png" width="200" alt=""></a>
+            <p>
+                <a href="">Terms of Service</a> |  <a href="">Privacy</a> | <a href="">Policy</a><br>
+                &copy; 2023 All Rights Reserved by <a href="">eGroceries</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
